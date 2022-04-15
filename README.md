@@ -1,2 +1,2 @@
-# PractisedQuestons
+# PractisedQuestions
 Examining my logical ability
