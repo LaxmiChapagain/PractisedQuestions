@@ -3,26 +3,14 @@
 
 
 
-function convert(x) {
-    var a = x.split('');
-    for (var i = 0; i < a.length; i++) {
-        if (a[i] == "a") {
-            a[i] = a[i].toUpperCase();
-        } else if (a[i] == "e") {
-            a[i] = a[i].toUpperCase();
-        } else if (a[i] == "i") {
-            a[i] = a[i].toUpperCase();
-        } else if (a[i] == "o") {
-            a[i] = a[i].toUpperCase();
-        } else if (a[i] == "u") {
-            a[i] = a[i].toUpperCase();
-        } else {
-            a[i] = a[i].toLowerCase();
+function uppercasingVowel(input) {
+    var vowel = 'aeiou'
+    input = input.split('')
+    for (i = 0; i < input.length; i++) {
+        if (vowel.includes(input[i])) {
+            input[i] = input[i].toUpperCase()
         }
     }
-    var b = a.join('');
-    return b;
+    console.log(input.join(''))
 }
-
-var output = convert("Learn programming and start earning");
-console.log("Result is ", output);
+uppercasingVowel("I am LaxmiChapagain")
