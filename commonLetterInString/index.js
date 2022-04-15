@@ -1,0 +1,2 @@
+// Wrte a program that takes multiple string as input and prints the number of common letters in all the strings
+// The first input n represents the number of strings input to be taken and each subsequent input will be a string. Each input should be taken in a new line.

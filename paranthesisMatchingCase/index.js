@@ -11,7 +11,7 @@ function areBracketsBalanced(expr) {
         // If current character is not opening
         // bracket, then it must be closing. 
         // So stack cannot be empty at this point.
-        if (stack.length == 0)
+        if (stack.length == 0 && (x == ')' || x == ']' || x == '}'))
             return false;
 
         let check;
@@ -41,7 +41,7 @@ function areBracketsBalanced(expr) {
 }
 
 // Driver code
-let expr = "[(])";
+let expr = "[)";
 
 // Function call
 if (areBracketsBalanced(expr))
